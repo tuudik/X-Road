@@ -74,7 +74,7 @@ import static ee.ria.xroad.signer.util.SignerUtil.keyId;
 @Slf4j
 public class HardwareTokenWorker extends AbstractTokenWorker {
 
-    private static final Mechanism KEYGEN_MECHANISM = Mechanism.get(PKCS11Constants.CKM_RSA_PKCS_KEY_PAIR_GEN);
+    private static final Mechanism KEYGEN_MECHANISM = Mechanism.get(PKCS11Constants.CKM_RSA_X9_31_KEY_PAIR_GEN);
 
     private final HardwareTokenType tokenType;
 
